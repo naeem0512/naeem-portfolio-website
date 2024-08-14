@@ -54,12 +54,12 @@ const education = {
   items: [
     {
       institution: "Birmingham City University",
-      degree: "BSc Hons: Computer and Data Science",
+      degree: "BSc Hons: Computer and Data Science (predicted 1st)",
       duration: "2021 - Present",
     },
     {
       institution: "Central Saint Michael's Sixth Form, West Bromwich",
-      degree: "Maths,Law,Physics",
+      degree: "BTEC Business Extended Diploma",
       duration: "2019 - 2021",
     },
     {
