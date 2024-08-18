@@ -36,6 +36,33 @@ const projects = [
   },
   {
     num: "02",
+    category: "Python",
+    title: "Sign Language Detection",
+    description:
+      "This project holds a special place in my heart because it combines technology with social impact. I worked on developing a sign language detection system using Python and machine learning. The goal was to bridge communication gaps for those who rely on sign language. This project taught me the importance of accessibility in technology, and it was incredibly fulfilling to apply machine learning in a way that could potentially make a real difference in people's lives.",
+    stack: [
+      { name: "Python" },
+      { name: "TensorFlow" },
+    ],
+    image: "/signlang.jpeg",
+    github: "https://github.com/naeem0512/Sign-Language",
+  },
+  {
+    num: "03",
+    category: "Machine Learning",
+    title: "Emotion Classification in Images: Happy vs. Sad",
+    description:
+      "This project is a simple yet effective introduction to the world of neural networks and deep learning. It focuses on classifying emotions in images as either 'Happy' or 'Sad' using a neural network model. The goal is to accurately (or nearly accurately) predict the emotion in the given images.",
+    stack: [
+      { name: "Python" },
+      { name: "Jupyter Notebook" },
+      { name: "TensorFlow" },
+    ],
+    image: "/cnn-image.png",  
+    github: "https://github.com/naeem0512/cnn-image-classifier",
+  },
+  {
+    num: "04",
     category: "Backend",
     title: "Luxury Wheels",
     description:
@@ -49,20 +76,7 @@ const projects = [
     github: "https://github.com/naeem0512/LuxuryWheels",
   },
   {
-    num: "03",
-    category: "Python",
-    title: "Sign Language Detection",
-    description:
-      "This project holds a special place in my heart because it combines technology with social impact. I worked on developing a sign language detection system using Python and machine learning. The goal was to bridge communication gaps for those who rely on sign language. This project taught me the importance of accessibility in technology, and it was incredibly fulfilling to apply machine learning in a way that could potentially make a real difference in people's lives.",
-    stack: [
-      { name: "Python" },
-      { name: "TensorFlow" },
-    ],
-    image: "/signlang.jpeg",
-    github: "https://github.com/naeem0512/Sign-Language",
-  },
-  {
-    num: "04",
+    num: "05",
     category: "Frontend",
     title: "Phaser Brick Breaker Game",
     description:
@@ -76,7 +90,7 @@ const projects = [
     github: "https://github.com/naeem0512/Phaser-Brick-Breaker-Game",
   },
   {
-    num: "05",
+    num: "06",
     category: "Machine Learning",
     title: "Movie Recommender",
     description:
@@ -90,7 +104,7 @@ const projects = [
     github: "https://github.com/naeem0512/MovieRecommender",
   },
   {
-    num: "06",
+    num: "07",
     category: "Python",
     title: "Snake Game",
     description:
