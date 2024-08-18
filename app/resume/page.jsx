@@ -54,7 +54,7 @@ const education = {
   items: [
     {
       institution: "Birmingham City University",
-      degree: "BSc Hons: Computer and Data Science (predicted 1st)",
+      degree: "BSc Hons: Computer and Data Science",
       duration: "2021 - Present",
     },
     {

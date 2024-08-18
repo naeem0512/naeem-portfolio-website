@@ -25,11 +25,11 @@ const projects = [
     category: "Fullstack",
     title: "Portfolio Website",
     description:
-      "A personal portfolio website showcasing my skills, projects, and contact information. Built with Next.js and Tailwind CSS. But hey, you probably already knew that—you’re standing inside it!",
+      "This portfolio website is more than just a collection of my work—it's a reflection of my journey as a developer. Built with Next.js and Tailwind CSS, this site represents countless hours of coding, tweaking, and perfecting. The goal was to create something that not only showcases my skills but also provides an intuitive and visually appealing experience. It's a project that continues to evolve as I learn more and push the boundaries of what I can do. And hey, you’re already here, so you know it’s working!",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind CSS" },
-      { name: "Framer Motion" }
+      { name: "Framer Motion" },
     ],
     image: "/computer.png",
     github: "https://github.com/naeem0512/Portfolio",
@@ -39,11 +39,11 @@ const projects = [
     category: "Backend",
     title: "Luxury Wheels",
     description:
-      "Specialised web-based car rental system tailored for wedding events, offering an intuitive booking interface for luxury and vintage cars.",
+      "Luxury Wheels was a project that challenged my backend development skills in a significant way. The idea was to create a specialized web-based car rental system for luxury and vintage cars, targeting high-end wedding events. I aimed to design a seamless booking interface that would provide an exceptional user experience. Throughout this project, I honed my PHP and MySQL skills while also understanding the importance of user experience in backend systems. It was rewarding to see how a robust backend can elevate the entire product.",
     stack: [
       { name: "PHP" },
       { name: "MySQL" },
-      { name: "JavaScript" }
+      { name: "JavaScript" },
     ],
     image: "/l.png",
     github: "https://github.com/naeem0512/LuxuryWheels",
@@ -53,10 +53,10 @@ const projects = [
     category: "Python",
     title: "Sign Language Detection",
     description:
-      "A sign language detection system built with Python to help bridge communication gaps using machine learning.",
+      "This project holds a special place in my heart because it combines technology with social impact. I worked on developing a sign language detection system using Python and machine learning. The goal was to bridge communication gaps for those who rely on sign language. This project taught me the importance of accessibility in technology, and it was incredibly fulfilling to apply machine learning in a way that could potentially make a real difference in people's lives.",
     stack: [
       { name: "Python" },
-      { name: "TensorFlow" }
+      { name: "TensorFlow" },
     ],
     image: "/signlang.jpeg",
     github: "https://github.com/naeem0512/Sign-Language",
@@ -66,11 +66,11 @@ const projects = [
     category: "Frontend",
     title: "Phaser Brick Breaker Game",
     description:
-      "A Phaser-based brick breaker game developed using HTML and JavaScript.",
+      "Creating this Phaser-based brick breaker game was a trip down memory lane to the classic games I grew up with. The challenge was to replicate the fun and addictive nature of the original while adding my own twist. This project allowed me to dive deep into game development concepts and sharpen my skills in HTML, JavaScript, and Phaser. It was a fun project that reminded me why I fell in love with coding in the first place—it's about creating something that brings joy.",
     stack: [
       { name: "HTML" },
       { name: "JavaScript" },
-      { name: "Phaser" }
+      { name: "Phaser" },
     ],
     image: "/bricks.png",
     github: "https://github.com/naeem0512/Phaser-Brick-Breaker-Game",
@@ -80,11 +80,11 @@ const projects = [
     category: "Machine Learning",
     title: "Movie Recommender",
     description:
-      "A hybrid movie recommendation system combining various filtering methods to suggest movies to users.",
+      "The Movie Recommender system was an exciting project that introduced me to the world of machine learning. The idea was to create a hybrid recommendation system that combines different filtering methods to suggest movies. It was fascinating to see how algorithms can predict user preferences and how data-driven insights can enhance user experiences. This project not only improved my Python and data analysis skills but also sparked my interest in AI and its potential to shape the future.",
     stack: [
       { name: "Python" },
       { name: "Jupyter Notebook" },
-      { name: "Pandas" }
+      { name: "Pandas" },
     ],
     image: "/pop.png",
     github: "https://github.com/naeem0512/MovieRecommender",
@@ -94,10 +94,10 @@ const projects = [
     category: "Python",
     title: "Snake Game",
     description:
-      "A simple Snake Game built with Pygame for a fun and classic gaming experience.",
+      "Building the Snake Game with Pygame was a nostalgic project that brought back memories of playing the classic game on my first mobile phone. The challenge was to recreate that same simple yet addictive experience using Python. This project allowed me to explore game development from a new perspective, focusing on the mechanics and user experience. It was a fun way to apply my programming skills to create something timeless and enjoyable.",
     stack: [
       { name: "Python" },
-      { name: "Pygame" }
+      { name: "Pygame" },
     ],
     image: "/Terminal Game.png",
     github: "https://github.com/naeem0512/snake-game",
