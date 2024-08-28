@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { BsGithub } from "react-icons/bs";
+import { FiArrowUpRight } from "react-icons/fi"; // Import the diagonal arrow icon
 
 import {
   Tooltip,
@@ -25,7 +26,7 @@ const projects = [
     category: "Fullstack",
     title: "Portfolio Website",
     description:
-      "This portfolio website is more than just a collection of my work—it's a reflection of my journey as a developer. Built with Next.js and Tailwind CSS, this site represents countless hours of coding, tweaking, and perfecting. The goal was to create something that not only showcases my skills but also provides an intuitive and visually appealing experience. It's a project that continues to evolve as I learn more and push the boundaries of what I can do. And hey, you’re already here, so you know it’s working!",
+      "This portfolio isn’t just a showcase—it’s my coding adventure. Built with Next.js and Tailwind CSS, it’s the result of countless hours tweaking things to look and feel just right. It’s still evolving as I learn new tricks. And hey, you’re already here, so I guess it’s doing its job!",
     stack: [
       { name: "Next.js" },
       { name: "Tailwind CSS" },
@@ -36,6 +37,25 @@ const projects = [
   },
   {
     num: "02",
+    category: "Fullstack",
+    title: "Finance Dashboard App",
+    description:
+      `I’ve always had a thing for finance—there’s something exciting about turning raw data into meaningful insights. So, I built the Finance Dashboard App, a tool that not only tracks Revenue, Profit, and Expenses but also uses machine learning to predict future trends. It’s like having a finance guru in your pocket!
+      
+      P.S. If your company could use a little financial wizardry, hmu ;)`,
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "React.js" },
+      { name: "Node.js" },
+      { name: "Machine Learning" },
+    ],
+    image: "/finance-app.png",
+    github: "https://github.com/naeem0512/finance-app",
+    live: "https://finance-ew52e1p9d-naeems-projects-50b3f431.vercel.app",
+  },
+  {
+    num: "03",
     category: "Python",
     title: "Sign Language Detection",
     description:
@@ -48,7 +68,7 @@ const projects = [
     github: "https://github.com/naeem0512/Sign-Language",
   },
   {
-    num: "03",
+    num: "04",
     category: "Machine Learning",
     title: "Emotion Classification in Images: Happy vs. Sad",
     description:
@@ -62,7 +82,7 @@ const projects = [
     github: "https://github.com/naeem0512/cnn-image-classifier",
   },
   {
-    num: "04",
+    num: "05",
     category: "Backend",
     title: "Luxury Wheels",
     description:
@@ -76,11 +96,11 @@ const projects = [
     github: "https://github.com/naeem0512/LuxuryWheels",
   },
   {
-    num: "05",
+    num: "06",
     category: "Frontend",
     title: "Phaser Brick Breaker Game",
     description:
-      "Creating this Phaser-based brick breaker game was a trip down memory lane to the classic games I grew up with. The challenge was to replicate the fun and addictive nature of the original while adding my own twist. This project allowed me to dive deep into game development concepts and sharpen my skills in HTML, JavaScript, and Phaser. It was a fun project that reminded me why I fell in love with coding in the first place—it's about creating something that brings joy.",
+      "Building this Phaser-based brick breaker game was a nostalgic blast from the past. The challenge? Capture that classic, addictive fun with my own twist. It took me deep into game dev with HTML, JavaScript, and Phaser, and reminded me why I love coding—it’s all about creating something that brings joy!",
     stack: [
       { name: "HTML" },
       { name: "JavaScript" },
@@ -90,11 +110,11 @@ const projects = [
     github: "https://github.com/naeem0512/Phaser-Brick-Breaker-Game",
   },
   {
-    num: "06",
+    num: "07",
     category: "Machine Learning",
     title: "Movie Recommender",
     description:
-      "The Movie Recommender system was an exciting project that introduced me to the world of machine learning. The idea was to create a hybrid recommendation system that combines different filtering methods to suggest movies. It was fascinating to see how algorithms can predict user preferences and how data-driven insights can enhance user experiences. This project not only improved my Python and data analysis skills but also sparked my interest in AI and its potential to shape the future.",
+      "Building the Movie Recommender system was my ticket into the wild world of machine learning. I cooked up a hybrid system that suggests movies like a psychic Netflix. Watching algorithms predict user preferences was a mind-blowing experience, and it seriously leveled up my Python and data skills. Plus, it’s got me thinking—AI might just be the future, and I’m here for it! So, Inception tonight?",
     stack: [
       { name: "Python" },
       { name: "Jupyter Notebook" },
@@ -104,11 +124,11 @@ const projects = [
     github: "https://github.com/naeem0512/MovieRecommender",
   },
   {
-    num: "07",
+    num: "08",
     category: "Python",
     title: "Snake Game",
     description:
-      "Building the Snake Game with Pygame was a nostalgic project that brought back memories of playing the classic game on my first mobile phone. The challenge was to recreate that same simple yet addictive experience using Python. This project allowed me to explore game development from a new perspective, focusing on the mechanics and user experience. It was a fun way to apply my programming skills to create something timeless and enjoyable.",
+      "Building the Snake Game with Pygame was a nostalgic trip back to my first mobile phone. Recreating that simple, addictive classic with Python was a blast, letting me dive into game mechanics and user experience. It was a fun way to flex my coding muscles and create something timeless.",
     stack: [
       { name: "Python" },
       { name: "Pygame" },
@@ -165,19 +185,36 @@ const Work = () => {
               </ul>
               {/* border */}
               <div className="border border-white/20"></div>
-              {/* github project button */}
-              <Link href={project.github}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Github repository</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Link>
+              <div className="flex gap-4">
+                {/* Live demo button */}
+                {project.live && (
+                  <Link href={project.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <FiArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live Demo</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {/* Github project button */}
+                <Link href={project.github}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Github repository</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
