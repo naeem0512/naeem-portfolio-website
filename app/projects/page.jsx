@@ -56,10 +56,25 @@ const projects = [
   },
   {
     num: "03",
+    category: "Frontend",
+    title: "Pathfinding Visualiser",
+    description:
+      "This project emerged while I was preparing for my university data structures and algorithms exams. To solidify my understanding, I built the Pathfinding Visualiser, bringing algorithms like Dijkstra and A* to life on screen. It not only helped me excel in my exams but also sharpened my programming skills, creating a tool that could benefit others in their learning journey.",
+    stack: [
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+    ],
+    image: "/pathfinder.png",  
+    github: "https://github.com/naeem0512/pathfinding-visualiser",
+    live: "https://pathfinding-visualiser-kappa.vercel.app/",
+  },
+  {
+    num: "04",
     category: "Python",
     title: "Sign Language Detection",
     description:
-      "This project holds a special place in my heart because it combines technology with social impact. I worked on developing a sign language detection system using Python and machine learning. The goal was to bridge communication gaps for those who rely on sign language. This project taught me the importance of accessibility in technology, and it was incredibly fulfilling to apply machine learning in a way that could potentially make a real difference in people's lives.",
+      "This project is close to my heart as it blends technology with social impact. I developed a sign language detection system using Python and machine learning to bridge communication gaps for sign language users. It highlighted the importance of accessibility in tech and was deeply fulfilling to create something that could genuinely make a difference.",
     stack: [
       { name: "Python" },
       { name: "TensorFlow" },
@@ -68,7 +83,7 @@ const projects = [
     github: "https://github.com/naeem0512/Sign-Language",
   },
   {
-    num: "04",
+    num: "05",
     category: "Machine Learning",
     title: "Emotion Classification in Images: Happy vs. Sad",
     description:
@@ -80,9 +95,10 @@ const projects = [
     ],
     image: "/cnn-image.png",  
     github: "https://github.com/naeem0512/cnn-image-classifier",
+    live: "https://drive.google.com/file/d/1aFuYjcCnIL7I9EOkq4Q2041F-KTmCqlB/view?usp=sharing",
   },
   {
-    num: "05",
+    num: "06",
     category: "Backend",
     title: "Luxury Wheels",
     description:
@@ -96,7 +112,7 @@ const projects = [
     github: "https://github.com/naeem0512/LuxuryWheels",
   },
   {
-    num: "06",
+    num: "07",
     category: "Frontend",
     title: "Phaser Brick Breaker Game",
     description:
@@ -108,9 +124,10 @@ const projects = [
     ],
     image: "/bricks.png",
     github: "https://github.com/naeem0512/Phaser-Brick-Breaker-Game",
+    live: "https://phaser-brick-breaker-game.vercel.app/",
   },
   {
-    num: "07",
+    num: "08",
     category: "Machine Learning",
     title: "Movie Recommender",
     description:
@@ -124,7 +141,7 @@ const projects = [
     github: "https://github.com/naeem0512/MovieRecommender",
   },
   {
-    num: "08",
+    num: "09",
     category: "Python",
     title: "Snake Game",
     description:
