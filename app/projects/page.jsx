@@ -57,7 +57,7 @@ const projects = [
     category: "Frontend",
     title: "Pathfinding Visualiser",
     description:
-      "This project emerged while I was preparing for my university data structures and algorithms exams. To solidify my understanding, I built the Pathfinding Visualiser, bringing algorithms like Dijkstra and A* to life on screen.",
+      "This project emerged while I was preparing for my university data structures and algorithms exams. To solidify my understanding, I built the Pathfinding Visualiser, bringing algorithms like Dijkstra and A* to life on screen. It not only helped me excel in my exams but also sharpened my programming skills, creating a tool that could benefit others in their learning journey.",
     stack: [
       { name: "React" },
       { name: "TypeScript" },
@@ -67,7 +67,90 @@ const projects = [
     github: "https://github.com/naeem0512/pathfinding-visualiser",
     live: "https://pathfinding-visualiser-kappa.vercel.app/",
   },
-  //... other projects
+  {
+    num: "04",
+    category: "Python",
+    title: "Sign Language Detection",
+    description:
+      "This project is close to my heart as it blends technology with social impact. I developed a sign language detection system using Python and machine learning to bridge communication gaps for sign language users. It highlighted the importance of accessibility in tech.",
+    stack: [
+      { name: "Python" },
+      { name: "TensorFlow" },
+    ],
+    image: "/signlang.jpeg",
+    github: "https://github.com/naeem0512/Sign-Language",
+  },
+  {
+    num: "05",
+    category: "Machine Learning",
+    title: "Emotion Classification in Images: Happy vs. Sad",
+    description:
+      "This project focuses on classifying emotions in images as either 'Happy' or 'Sad' using a neural network model. The goal is to accurately predict the emotion in the given images.",
+    stack: [
+      { name: "Python" },
+      { name: "Jupyter Notebook" },
+      { name: "TensorFlow" },
+    ],
+    image: "/cnn-image.png",  
+    github: "https://github.com/naeem0512/cnn-image-classifier",
+    live: "https://drive.google.com/file/d/1aFuYjcCnIL7I9EOkq4Q2041F-KTmCqlB/view?usp=sharing",
+  },
+  {
+    num: "06",
+    category: "Backend",
+    title: "Luxury Wheels",
+    description:
+      "Luxury Wheels was a project that challenged my backend development skills in a significant way. The idea was to create a specialized web-based car rental system for luxury and vintage cars.",
+    stack: [
+      { name: "PHP" },
+      { name: "MySQL" },
+      { name: "JavaScript" },
+    ],
+    image: "/l.png",
+    github: "https://github.com/naeem0512/LuxuryWheels",
+  },
+  {
+    num: "07",
+    category: "Frontend",
+    title: "Phaser Brick Breaker Game",
+    description:
+      "Building this Phaser-based brick breaker game was a nostalgic blast from the past. The challenge? Capture that classic, addictive fun with my own twist.",
+    stack: [
+      { name: "HTML" },
+      { name: "JavaScript" },
+      { name: "Phaser" },
+    ],
+    image: "/bricks.png",
+    github: "https://github.com/naeem0512/Phaser-Brick-Breaker-Game",
+    live: "https://phaser-brick-breaker-game.vercel.app/",
+  },
+  {
+    num: "08",
+    category: "Machine Learning",
+    title: "Movie Recommender",
+    description:
+      "The Movie Recommender system suggests movies based on user preferences. It's a hybrid system built using Python and machine learning that predicts user likes based on behavior.",
+    stack: [
+      { name: "Python" },
+      { name: "Jupyter Notebook" },
+      { name: "Pandas" },
+    ],
+    image: "/pop.png",
+    github: "https://github.com/naeem0512/MovieRecommender",
+  },
+  {
+    num: "09",
+    category: "Python",
+    title: "Snake Game",
+    description:
+      "Recreating the Snake Game using Python and Pygame was a nostalgic trip. It allowed me to dive into game mechanics and create something fun yet challenging.",
+    stack: [
+      { name: "Python" },
+      { name: "Pygame" },
+    ],
+    image: "/Terminal Game.png",
+    github: "https://github.com/naeem0512/snake-game",
+  },
 ];
 
 const Work = () => {
