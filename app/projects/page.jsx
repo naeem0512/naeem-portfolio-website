@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { BsGithub } from "react-icons/bs";
-import { FiArrowUpRight } from "react-icons/fi"; // Import the diagonal arrow icon
+import { FiArrowUpRight } from "react-icons/fi"; 
 
 import {
   Tooltip,
@@ -33,7 +33,7 @@ const projects = [
       { name: "Framer Motion" },
     ],
     image: "/computer.png",
-    github: "https://github.com/naeem0512/Portfolio",
+    //github: "https://github.com/naeem0512/Portfolio",
   },
   {
     num: "02",
