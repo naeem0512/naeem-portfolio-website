@@ -79,6 +79,7 @@ const projects = [
     ],
     image: "/signlang.jpeg",
     github: "https://github.com/naeem0512/Sign-Language",
+    live: "https://drive.google.com/file/d/1i2r_KdMM2t9cpvhixlYMzUQ7T0BUAWbp/view?usp=sharing",
   },
   {
     num: "05",
