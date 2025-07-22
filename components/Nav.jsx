@@ -21,8 +21,8 @@ const links = [
     path: "/resume", // Ensure this path matches your route
   },
   {
-    name: "contact",
-    path: "/contact",
+    name: "guestbook",
+    path: "/guestbook",
   },
 ];
 

@@ -19,8 +19,12 @@ const links = [
     path: "/projects",
   },
   {
-    name: "contact",
-    path: "/contact",
+    name: "lab",      // ← Add this line
+    path: "/lab",     // ← Add this line
+  },
+  {
+    name: "guestbook",
+    path: "/guestbook",
   },
 ];
 

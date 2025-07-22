@@ -44,5 +44,60 @@
   .border-line {
     @apply border-b border-white/20 w-full my-6;
   }
+
+  /* Add this to your globals.css file */
+
+/* Hide default cursor on desktop */
+@media (min-width: 769px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Keep default cursor on mobile devices */
+@media (max-width: 768px) {
+  * {
+    cursor: default !important;
+  }
+}
+
+/* Enhanced hover effects for interactive elements */
+a, button, [role="button"], input, textarea, select, .cursor-pointer {
+  transition: all 0.3s ease;
+}
+
+/* Optional: Add some extra flair to buttons when hovered */
+button:hover, [role="button"]:hover {
+  transform: translateY(-2px);
+}
+
+/* Smooth transitions for all interactive elements */
+.cursor-hover-effect {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom cursor trail effect */
+.cursor-trail {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9996;
+  width: 6px;
+  height: 6px;
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 50%;
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
   
 }
