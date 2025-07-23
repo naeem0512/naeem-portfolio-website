@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 
+// Links now match your desktop Nav component exactly
 const links = [
   {
     name: "home",
@@ -19,8 +20,8 @@ const links = [
     path: "/projects",
   },
   {
-    name: "lab",      // ← Add this line
-    path: "/lab",     // ← Add this line
+    name: "resume",
+    path: "/resume",
   },
   {
     name: "guestbook",

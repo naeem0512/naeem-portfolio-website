@@ -1,0 +1,22 @@
+// app/projects/page.jsx - SERVER COMPONENT (NO "use client")
+
+// ✅ METADATA EXPORT (only works in Server Components)
+export const metadata = {
+  title: "Projects",
+  description: "Explore my portfolio of AI/ML projects, full-stack applications, and creative coding solutions. From LiftSense fatigue detection to pathfinding visualizations.",
+  keywords: "projects, portfolio, AI, machine learning, full stack, React, Python, TensorFlow, LiftSense",
+  openGraph: {
+    title: "Projects | Mohammed Naeem Ahmed",
+    description: "Explore my portfolio of AI/ML projects, full-stack applications, and creative coding solutions.",
+    url: "https://naeemcodes.com/projects",
+    images: ["/projects-og.jpg"]
+  }
+};
+
+// Import the client component
+import ProjectsClient from './ProjectsClient';
+
+// ✅ SERVER COMPONENT (renders the client component)
+export default function ProjectsPage() {
+  return <ProjectsClient />;
+}

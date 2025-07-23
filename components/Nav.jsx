@@ -1,3 +1,4 @@
+// components/Nav.jsx - Fixed version
 "use client";
 
 import Link from "next/link";
@@ -9,7 +10,7 @@ const links = [
     path: "/",
   },
   {
-    name: "blog",
+    name: "about", // Changed from "blog" to match content
     path: "/about",
   },
   {
@@ -17,8 +18,8 @@ const links = [
     path: "/projects",
   },
   {
-    name: "resume",  // Ensure this is correct
-    path: "/resume", // Ensure this path matches your route
+    name: "resume",
+    path: "/resume",
   },
   {
     name: "guestbook",
