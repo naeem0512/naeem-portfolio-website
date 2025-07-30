@@ -1,18 +1,18 @@
 // app/about/page.jsx - SERVER COMPONENT
 
 export const metadata = {
-  title: "About",
-  description: "Learn about my journey from curious coder to first-class Computer & Data Science graduate. My story of academic success and passion for technology.",
-  keywords: "about, journey, first class degree, Computer Science, Birmingham City University, Mohammed Naeem Ahmed",
+  title: "Blog",
+  description: "From curious coder to first-class Computer & Data Science graduate. An interactive blog about my coding journey, challenges, and achievements.",
+  keywords: "blog, journey, first class degree, Computer Science, Birmingham City University, Mohammed Naeem Ahmed, coding story",
   openGraph: {
-    title: "About | Mohammed Naeem Ahmed",
-    description: "Learn about my journey from curious coder to first-class Computer & Data Science graduate.",
+    title: "Blog | Mohammed Naeem Ahmed",
+    description: "From curious coder to first-class Computer & Data Science graduate. An interactive blog about my coding journey.",
     url: "https://naeemcodes.com/about",
   }
 };
 
-import AboutClient from './AboutClient';
+import BlogClient from './BlogClient';
 
 export default function AboutPage() {
-  return <AboutClient />;
+  return <BlogClient />;
 }

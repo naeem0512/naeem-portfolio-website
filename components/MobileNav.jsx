@@ -12,7 +12,7 @@ const links = [
     path: "/",
   },
   {
-    name: "about",
+    name: "blog",
     path: "/about",
   },
   {

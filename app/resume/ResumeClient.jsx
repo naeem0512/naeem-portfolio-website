@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -45,16 +44,17 @@ const skills = {
   ]
 };
 
-// Education data
+// Education data with correct timeline
 const education = {
   title: "Education",
   items: [
     {
       institution: "Birmingham City University",
       degree: "BSc Computer and Data Science",
-      duration: "2021 - Present",
-      status: "Final Year",
-      highlights: ["Data Structures & Algorithms", "Software Engineering", "Machine Learning"]
+      duration: "2022 - 2025",
+      status: "First-Class Honours Graduate",
+      grade: "Expected: First-Class Honours",
+      highlights: ["Data Structures & Algorithms", "Software Engineering", "Machine Learning", "AI Systems", "Database Design"]
     }
   ],
 };
@@ -67,18 +67,22 @@ const certifications = {
     { name: "Enterprise Design Thinking Practitioner", issuer: "IBM", year: "2024" },
     { name: "Software Engineer Intern", issuer: "HackerRank", year: "2024" },
     { name: "Java Programming", issuer: "HackerRank", year: "2023" },
+    { name: "Data Science Fundamentals", issuer: "IBM", year: "2023" },
+    { name: "React Developer", issuer: "HackerRank", year: "2023" },
   ],
 };
 
-// Personal info
+// Personal info with updated timeline
 const about = {
   title: "About Me",
-  description: "Computer Science student passionate about creating impactful software solutions. I enjoy tackling complex problems and building applications that make a difference.",
+  description: "Computer Science graduate passionate about creating impactful software solutions. Over my 3+ years of study (2022-2025), I've developed expertise in full-stack development and AI/ML, with a focus on building applications that solve real-world problems.",
   details: [
-    { label: "Status", value: "Final Year Computer Science Student" },
-    { label: "Focus", value: "Full-Stack Development & Problem Solving" },
-    { label: "Interests", value: "Web Development, AI/ML, Software Engineering" },
-    { label: "Goal", value: "Building solutions that create real impact" }
+    { label: "Status", value: "First-Class Computer Science Graduate (2025)" },
+    { label: "Focus", value: "Full-Stack Development & AI/ML Engineering" },
+    { label: "Specialization", value: "React, Python, TensorFlow, Next.js" },
+    { label: "Goal", value: "Building innovative solutions with real impact" },
+    { label: "University", value: "Birmingham City University (2022-2025)" },
+    { label: "Experience", value: "3+ years of project development" }
   ]
 };
 
@@ -167,7 +171,7 @@ const Resume = () => {
                             <p className="text-accent text-sm font-medium">{item.status}</p>
                           )}
                           {item.grade && (
-                            <p className="text-accent text-sm font-medium">{item.grade}</p>
+                            <p className="text-green-400 text-sm font-medium">{item.grade}</p>
                           )}
                         </div>
                       </div>
@@ -219,16 +223,16 @@ const Resume = () => {
                   {about.description}
                 </p>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[600px] mx-auto xl:mx-0 mt-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[800px] mx-auto xl:mx-0 mt-8">
                   {about.details.map((detail, index) => (
                     <div
                       key={index}
                       className="flex flex-col sm:flex-row items-center sm:items-start gap-2"
                     >
-                      <span className="text-accent font-medium min-w-[80px]">
+                      <span className="text-accent font-medium min-w-[100px]">
                         {detail.label}:
                       </span>
-                      <span className="text-white/80">{detail.value}</span>
+                      <span className="text-white/80 text-center sm:text-left">{detail.value}</span>
                     </div>
                   ))}
                 </div>

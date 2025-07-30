@@ -1,4 +1,4 @@
-// app/layout.jsx - Updated with accessibility and SEO improvements
+// app/layout.jsx - Updated with Session Provider
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -8,12 +8,13 @@ import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import SkipNav from "@/components/SkipNav";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import SessionProvider from "@/components/SessionProvider";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-jetbrainsMono",
-  display: 'swap', // Improve font loading performance
+  display: 'swap',
 });
 
 export const metadata = {
@@ -36,7 +37,7 @@ export const metadata = {
     siteName: "Mohammed Naeem Ahmed Portfolio",
     images: [
       {
-        url: "/og-image.jpg", // You'll need to create this
+        url: "/og-image.jpg", // Need to create this image
         width: 1200,
         height: 630,
         alt: "Mohammed Naeem Ahmed - Portfolio"
@@ -48,7 +49,7 @@ export const metadata = {
     title: "Mohammed Naeem Ahmed - Portfolio",
     description: "First-class Computer & Data Science graduate specializing in AI/ML, full-stack development, and creating impactful digital solutions.",
     images: ["/og-image.jpg"],
-    creator: "@your_twitter_handle" // Add your Twitter handle
+    creator: "@your_twitter_handle"
   },
   robots: {
     index: true,
@@ -62,24 +63,36 @@ export const metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Add when you set up Google Search Console
+    google: "your-google-verification-code",
   }
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={jetbrainsMono.variable}>
+    <html lang="en" className={jetbrainsMono.variable} suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://api.github.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <meta name="theme-color" content="#00ff99" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      </head>
       <body className="bg-primary text-white">
-        <SkipNav />
-        <ErrorBoundary fallbackMessage="Something went wrong with the page. Please refresh to try again.">
-          <Header />
-          <StairTransition />
-          <main id="main-content" tabIndex={-1}>
-            <PageTransition>
-              {children}
-            </PageTransition>
-          </main>
-        </ErrorBoundary>
+        <SessionProvider>
+          <SkipNav />
+          <ErrorBoundary fallbackMessage="Something went wrong with the page. Please refresh to try again.">
+            <Header />
+            <StairTransition />
+            
+            <main id="main-content" tabIndex={-1}>
+              <PageTransition>
+                {children}
+              </PageTransition>
+            </main>
+          </ErrorBoundary>
+        </SessionProvider>
       </body>
     </html>
   );

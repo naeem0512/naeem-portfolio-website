@@ -10,7 +10,7 @@ const links = [
     path: "/",
   },
   {
-    name: "about", // Changed from "blog" to match content
+    name: "blog", // Changed from "blog" to match content
     path: "/about",
   },
   {

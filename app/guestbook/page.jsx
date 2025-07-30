@@ -1,4 +1,4 @@
-// app/guestbook/page.jsx - SERVER COMPONENT
+// app/guestbook/page.jsx - Temporary fix
 
 export const metadata = {
   title: "Guestbook",

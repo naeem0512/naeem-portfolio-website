@@ -144,7 +144,7 @@ const Stats = () => {
             </div>
             <div className="w-px h-12 bg-white/10 hidden sm:block"></div>
             <div className="flex flex-col items-center gap-2">
-              <div className="text-2xl font-bold text-accent">2024</div>
+              <div className="text-2xl font-bold text-accent">2025</div>
               <div className="text-sm text-white/60">Graduation Year</div>
             </div>
             <div className="w-px h-12 bg-white/10 hidden sm:block"></div>
