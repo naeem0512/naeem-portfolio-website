@@ -1,4 +1,4 @@
-// app/about/BlogClient.jsx - UPDATED VERSION
+// app/about/BlogClient.jsx - COMPLETE VERSION WITH ALL COMPONENTS
 
 "use client";
 
@@ -32,11 +32,14 @@ import {
   Bookmark,
   ExternalLink,
   User,
-  Star
+  Star,
+  Target,
+  Award,
+  Zap
 } from "lucide-react";
 import Link from "next/link";
 
-// Enhanced blog data with multiple posts
+// Enhanced blog data with complete wrestling content
 const blogPosts = [
   {
     id: 1,
@@ -46,12 +49,9 @@ const blogPosts = [
     date: "July 2025",
     readTime: "8 min read",
     category: "Journey",
-    tags: ["First Class", "University", "Coding Journey", "Birmingham City", "Computer Science"],
+    tags: ["First Class", "University", "Coding Journey", "Birmingham City", "Computer Science", "Wrestling"],
     coverImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=400&fit=crop",
-    excerpt: "From feeling completely lost in my first programming lecture to building AI systems that actually work... this journey has been absolutely wild.",
-    views: 1247,
-    likes: 89,
-    comments: 23,
+    excerpt: "From feeling completely lost in my first programming lecture to building AI systems AND becoming a SLAM wrestling champion... this journey has been absolutely wild.",
     featured: true,
     content: {
       sections: [
@@ -59,7 +59,7 @@ const blogPosts = [
           id: "intro",
           title: "The Beginning",
           icon: Sparkles,
-          content: "Okay, let me take a moment to breathe and celebrate because... I actually did it! 🎊 It all started with one simple (and slightly panicked) question: \"How do these apps even work?!\" Fast-forward through countless late nights, debugging marathons, and about a thousand Stack Overflow tabs later—and here I am: a First-Class Honours Computer & Data Science graduate!"
+          content: "Okay, let me take a moment to breathe and celebrate because... I actually did it! 🎊 It all started with one simple (and slightly panicked) question: \"How do these apps even work?!\" Fast-forward through countless late nights, debugging marathons, intense wrestling training, and about a thousand Stack Overflow tabs later—and here I am: a First-Class Honours Computer & Data Science graduate AND a SLAM wrestling champion!"
         },
         {
           id: "spark",
@@ -85,6 +85,14 @@ def solve_problem(confusion, coffee_cups, determination):
             return "Eureka! 🎉"
     return "More coffee needed ☕"`
           }
+        },
+        {
+          id: "wrestling_victory",
+          title: "🥇 SLAM Championship Victory",
+          icon: Trophy,
+          timeline: "August 2025",
+          content: "Nine months ago, I'd never set foot on a wrestling mat. Last month, I won gold at the SLAM Championship in the 92kg Senior Male Novice category. The journey from complete beginner to champion taught me more about resilience and determination than any coding challenge ever could.",
+          highlight: "Standing on that podium with the gold medal around my neck, I realized that the same problem-solving mindset that helped me debug code had carried me to wrestling victory. Both require breaking down complex problems into manageable pieces."
         },
         {
           id: "achievement",
@@ -116,7 +124,123 @@ def solve_problem(confusion, coffee_cups, determination):
     }
   },
   {
-    id: 2,
+    "id": 2,
+    "title": "🤼‍♂️ From Zero to SLAM Gold: My Wrestling Journey",
+    "subtitle": "How a Computer Science student fell in love with wrestling and conquered the mat",
+    "author": "Mohammed Naeem Ahmed",
+    "date": "August 2025",
+    "readTime": "15 min read",
+    "category": "Sports",
+    "tags": ["Wrestling", "SLAM Championship", "Gold Medal", "Training", "Competition", "Personal Growth"],
+    "coverImage": "https://images.unsplash.com/photo-1544717304-a2db4a516b95?w=800&h=400&fit=crop",
+    "excerpt": "Nine months ago, I'd never set foot on a wrestling mat. Last week, I won gold at the SLAM Championship. This is the story of how I discovered my passion for the beautiful brutality of wrestling.",
+    "featured": false,
+    "content": {
+      "sections": [
+        {
+          "id": "beginning",
+          "title": "The Unexpected Beginning",
+          "icon": "Zap",
+          "timeline": "November 2024",
+          "content": "It started with a wrestling top. I was at Simply Gym Walsall doing my usual workout when I noticed this guy training in wrestling gear. Something about the way he moved—the intensity, the focus, the discipline—caught my attention. He was from Iran, and if you know wrestling, you know Iranians are legends in the sport. I asked him about it, and he invited me to train with him. That was Farid. That small exchange opened a door I never expected.",
+          "highlight": "My first wrestling 'lesson' was Farid throwing me around the mats at Simply Gym and correcting every mistake—stance, posture, movement. After an hour of being humbled, he told me: 'You're terrible, but you don’t quit. Go to a real club.' That’s how I found Wolverhampton Wrestling Club and GNG Wednesfield Wrestling Club."
+        },
+        {
+          "id": "first_months",
+          "title": "The Humbling First Months",
+          "icon": "Target",
+          "timeline": "December 2024 - February 2025",
+          "content": "The first few months at Wolverhampton and GNG were brutal. Wrestling isn’t a sport where you can hide behind strength or athleticism. Every weakness gets exposed. Coaches drilled the fundamentals into me, and even teenagers with years of experience had their way with me. Each session was another reminder that progress only comes through persistence.",
+          "highlight": "The learning curve was harsher than anything I’d faced in computer science. With coding, you can Google errors. In wrestling, the only teacher is experience—painful, sweaty, exhausting experience. I started keeping a wrestling journal, logging techniques like functions to debug and optimize.",
+          "stats": {
+            "Training hours/week": "15-20",
+            "Techniques learned": "Dozens",
+            "Times pinned": "Lost count"
+          }
+        },
+        {
+          "id": "breakthrough",
+          "title": "The Breakthrough Moment",
+          "icon": "Award",
+          "timeline": "March 2025",
+          "content": "Around five months in, things started to click. During sparring at GNG, I began to notice patterns—the weight shifts before a shot, the shoulder movement before a throw. For the first time, I wasn’t just reacting, I was anticipating. Wrestling started to make sense.",
+          "highlight": "I landed my first clean double-leg takedown on a club veteran who had been dominating me for months. My coach just nodded and said, 'Now you’re starting to wrestle.' That’s when I knew I was ready to test myself in competition."
+        },
+        {
+          "id": "preparation",
+          "title": "The Road to SLAM",
+          "icon": "Target",
+          "timeline": "April - July 2025",
+          "content": "Balancing dissertation deadlines and wrestling training pushed me to the limit. My days became a cycle of coding, lifting, drilling, sparring, and late-night debugging. It was exhausting but purposeful—each session building towards stepping on the mat at SLAM.",
+          "trainingRegime": [
+            "Monday/Wednesday/Friday: Technique drilling and live wrestling",
+            "Tuesday/Thursday: Strength & conditioning",
+            "Saturday: Competition simulations",
+            "Sunday: Active recovery and film study"
+          ],
+          "highlight": "Mental preparation was just as tough as the physical. Learning to stay calm under pressure—whether in front of a committee or in a wrestling match—became part of my routine."
+        },
+        {
+          "id": "competition_day",
+          "title": "SLAM Championship Day",
+          "icon": "Trophy",
+          "timeline": "August 2025",
+          "content": "August 10th, 2025. The venue was buzzing—coaches shouting, mats being cleaned, wrestlers pacing with headphones on. I weighed in at 92kg and found out there was just one other competitor in my category. One fight. One chance for gold.",
+          "matches": [
+            {
+              "round": "Final",
+              "opponent": "Another 92kg competitor",
+              "result": "Won by points",
+              "highlight": "The match was gritty. The opening grips were tense, both of us fighting for control. Midway through, I hit a well-timed takedown I’d drilled a hundred times. From there, it was about composure, holding position, and not giving an inch. When the whistle blew and my hand was raised, it hit me—nine months after starting, I was SLAM Champion."
+            }
+          ]
+        },
+        {
+          "id": "victory_moment",
+          "title": "Standing on the Podium",
+          "icon": "Award",
+          "timeline": "The Victory",
+          "content": "Standing on the podium with gold around my neck, I thought back to day one. I didn’t even know what a sprawl was. Now I had just won my first competition. The medal wasn’t just about that one fight—it was the sum of every bruising session, every correction, every hour spent drilling the basics.",
+          "highlight": "It was proof that discipline and persistence can rewrite who you are. I wasn’t just a computer science student anymore. I was a wrestler.",
+          "achievement": {
+            "title": "SLAM Championship Gold",
+            "category": "92kg Senior Male Novice",
+            "date": "August 10, 2025",
+            "significance": "From complete beginner to champion in 9 months"
+          }
+        },
+        {
+          "id": "lessons",
+          "title": "What Wrestling Taught Me About Life (and Code)",
+          "icon": "Heart",
+          "content": "Wrestling and programming might seem unrelated, but both demand problem-solving under pressure. Both require persistence through failure. Both reward those who keep showing up.",
+          "lessons": [
+            "**Embrace the grind**: Improvement comes through repetition and attention to detail.",
+            "**Failure is data**: Every lost round or missed takedown is feedback to learn from.",
+            "**Conditioning is everything**: Endurance matters as much in coding marathons as on the mat.",
+            "**Stay humble**: There’s always someone better, always something new to learn.",
+            "**Trust the process**: Consistency builds champions—whether in sport or study."
+          ],
+          "highlight": "The mental toughness built on the mat made my dissertation defense feel like a casual chat. The problem-solving skills from coding helped me see wrestling as algorithms in motion. Everything connected."
+        },
+        {
+          "id": "future",
+          "title": "What's Next on the Mat",
+          "icon": "Zap",
+          "content": "Winning SLAM was just the beginning. I’ve registered for more competitions, with a goal to step up from novice to senior level next year. The long-term vision? Compete nationally and see how far I can push myself.",
+          "upcomingGoals": [
+            "October 4, 2025: Derbyshire Open - Wirksworth Leisure Centre",
+            "October 25, 2025: Battle of the Midlands - Beauchamp College, Leicester",
+            "2026: Move up to Senior Division (non-novice)",
+            "2026: Qualify for British Wrestling Championships"
+          ],
+          "highlight": "Beyond medals, I want to inspire others who never saw themselves as athletes to try combat sports. If I could go from zero to winning gold in under a year, imagine what’s possible with the right mindset."
+        }
+      ]
+    }  
+  },
+  {
+    id: 3,
     title: "Building LiftSense: My AI-Powered Fatigue Detection System",
     subtitle: "How I achieved 97.94% accuracy in real-time fatigue monitoring",
     author: "Mohammed Naeem Ahmed",
@@ -126,13 +250,10 @@ def solve_problem(confusion, coffee_cups, determination):
     tags: ["Machine Learning", "LSTM", "Python", "TensorFlow", "Healthcare Tech"],
     coverImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop",
     excerpt: "Deep dive into the technical challenges and breakthroughs of creating an intelligent fatigue detection system using LSTM neural networks.",
-    views: 892,
-    likes: 67,
-    comments: 15,
     featured: false
   },
   {
-    id: 3,
+    id: 4,
     title: "From Beginner to Full-Stack: My React Journey",
     subtitle: "Learning React, Next.js, and building real-world applications",
     author: "Mohammed Naeem Ahmed", 
@@ -142,13 +263,10 @@ def solve_problem(confusion, coffee_cups, determination):
     tags: ["React", "Next.js", "JavaScript", "Full Stack", "Learning"],
     coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop",
     excerpt: "My journey from struggling with JavaScript basics to building full-stack applications with React and Next.js.",
-    views: 654,
-    likes: 45,
-    comments: 8,
     featured: false
   },
   {
-    id: 4,
+    id: 5,
     title: "Why I Chose Computer Science (And Why You Should Too)",
     subtitle: "The field that's shaping our future and how to get started",
     author: "Mohammed Naeem Ahmed",
@@ -158,9 +276,6 @@ def solve_problem(confusion, coffee_cups, determination):
     tags: ["Computer Science", "Career", "University", "Advice", "Future"],
     coverImage: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=400&fit=crop",
     excerpt: "Why computer science is more than just coding and how it opens doors to incredible opportunities.",
-    views: 1156,
-    likes: 78,
-    comments: 12,
     featured: false
   }
 ];
@@ -363,6 +478,197 @@ const FloatingActions = ({ post, liked, setLiked, bookmarked, setBookmarked }) =
   );
 };
 
+// Section Card Component for detailed post view
+const SectionCard = ({ section, index }) => {
+  const IconComponent = section.icon;
+
+  return (
+    <motion.article
+      id={section.id}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.1 }}
+      className="group relative"
+    >
+      <div className="bg-gradient-to-br from-white/5 to-white/2 backdrop-blur-lg rounded-2xl border border-white/10 p-8 hover:border-accent/30 transition-all duration-500 overflow-hidden">
+        
+        {/* Timeline indicator */}
+        {section.timeline && (
+          <div className="absolute -left-4 top-8 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-primary font-bold text-sm">
+            {section.timeline.slice(-2)}
+          </div>
+        )}
+
+        {/* Header */}
+        <div className="flex items-start gap-4 mb-6">
+          <div className="p-3 bg-accent/10 rounded-xl border border-accent/20 group-hover:scale-110 transition-transform duration-300">
+            <IconComponent className="w-6 h-6 text-accent" />
+          </div>
+          <div className="flex-1">
+            <h2 className="text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300">
+              {section.title}
+            </h2>
+            {section.timeline && (
+              <span className="text-accent/70 text-sm font-medium">{section.timeline}</span>
+            )}
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="space-y-6">
+          <p className="text-white/80 text-lg leading-relaxed">
+            {section.content}
+          </p>
+
+          {/* Highlight box */}
+          {section.highlight && (
+            <div className="bg-accent/5 border-l-4 border-accent p-4 rounded-r-lg">
+              <p className="text-white/90 italic">{section.highlight}</p>
+            </div>
+          )}
+
+          {/* Code block */}
+          {section.codeBlock && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="bg-[#0d1117] rounded-lg border border-white/10 overflow-hidden"
+            >
+              <div className="flex items-center justify-between px-4 py-2 bg-white/5 border-b border-white/10">
+                <span className="text-white/60 text-sm">{section.codeBlock.language}</span>
+                <div className="flex gap-2">
+                  <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                </div>
+              </div>
+              <pre className="p-4 overflow-x-auto">
+                <code className="text-sm text-white/90 font-mono">
+                  {section.codeBlock.code}
+                </code>
+              </pre>
+            </motion.div>
+          )}
+
+          {/* Achievements list */}
+          {section.achievements && (
+            <div className="space-y-3">
+              <h4 className="text-white font-semibold mb-4">What's Next?</h4>
+              {section.achievements.map((achievement, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  className="flex items-start gap-3"
+                >
+                  <ChevronRight className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                  <span className="text-white/80">{achievement}</span>
+                </motion.div>
+              ))}
+            </div>
+          )}
+
+          {/* Training Regime */}
+          {section.trainingRegime && (
+            <div className="space-y-2">
+              <h4 className="text-white font-semibold mb-3">Training Schedule:</h4>
+              {section.trainingRegime.map((item, i) => (
+                <div key={i} className="flex items-start gap-2 text-white/80">
+                  <span className="text-accent mt-1">•</span>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Matches */}
+          {section.matches && (
+            <div className="space-y-4">
+              {section.matches.map((match, i) => (
+                <div key={i} className="bg-white/5 rounded-lg p-4 border border-white/10">
+                  <div className="flex justify-between items-start mb-2">
+                    <h4 className="text-accent font-semibold">{match.round}</h4>
+                    <span className="px-2 py-1 bg-accent/20 text-accent text-sm rounded">
+                      {match.result}
+                    </span>
+                  </div>
+                  <p className="text-white/70 text-sm mb-2">vs {match.opponent}</p>
+                  <p className="text-white/90 italic text-sm">{match.highlight}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Achievement Badge */}
+          {section.achievement && (
+            <div className="bg-gradient-to-r from-accent/10 to-yellow-500/10 rounded-lg p-6 border border-accent/30">
+              <Trophy className="w-8 h-8 text-yellow-500 mb-3" />
+              <h4 className="text-xl font-bold text-white mb-2">{section.achievement.title}</h4>
+              <p className="text-accent font-medium">{section.achievement.category}</p>
+              <p className="text-white/70 text-sm">{section.achievement.date}</p>
+              <p className="text-white/90 mt-3">{section.achievement.significance}</p>
+            </div>
+          )}
+
+          {/* Lessons */}
+          {section.lessons && (
+            <div className="space-y-3">
+              {section.lessons.map((lesson, i) => (
+                <div key={i} className="text-white/80">
+                  {lesson.split('**').map((part, j) => (
+                    j % 2 === 0 ? <span key={j}>{part}</span> : <strong key={j} className="text-white">{part}</strong>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Upcoming Goals */}
+          {section.upcomingGoals && (
+            <div className="space-y-2">
+              <h4 className="text-white font-semibold mb-3">The Road Ahead:</h4>
+              {section.upcomingGoals.map((goal, i) => (
+                <div key={i} className="flex items-center gap-3 text-white/80">
+                  <Target className="w-4 h-4 text-accent" />
+                  <span>{goal}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Project stats */}
+          {section.stats && (
+            <div className="grid grid-cols-3 gap-4 p-4 bg-white/5 rounded-lg">
+              {Object.entries(section.stats).map(([key, value]) => (
+                <div key={key} className="text-center">
+                  <div className="text-accent font-bold text-lg">{value}</div>
+                  <div className="text-white/60 text-sm capitalize">{key}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Project link */}
+          {section.projectLink && (
+            <Link href={section.projectLink}>
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex items-center gap-2 bg-accent text-primary px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+              >
+                Check out LiftSense
+                <ChevronRight className="w-4 h-4" />
+              </motion.button>
+            </Link>
+          )}
+        </div>
+      </div>
+    </motion.article>
+  );
+};
+
 // Full Post View Component
 const FullPostView = ({ post, onBack }) => {
   const [readingProgress, setReadingProgress] = useState(0);
@@ -472,10 +778,6 @@ const FullPostView = ({ post, onBack }) => {
                   <Clock className="w-4 h-4" />
                   <span>{post.readTime}</span>
                 </div>
-                <div className="flex items-center gap-1">
-                  <Eye className="w-4 h-4" />
-                  <span>{post.views.toLocaleString()} views</span>
-                </div>
               </div>
             </div>
 
@@ -512,15 +814,13 @@ const FullPostView = ({ post, onBack }) => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-6 text-white/60">
-                <div className="flex items-center gap-1">
-                  <ThumbsUp className="w-4 h-4" />
-                  <span>{post.likes}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <MessageCircle className="w-4 h-4" />
-                  <span>{post.comments}</span>
-                </div>
+              <div className="flex items-center gap-4">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  className="text-white/60 hover:text-accent transition-colors"
+                >
+                  <Share2 className="w-5 h-5" />
+                </motion.button>
               </div>
             </div>
           </motion.div>
@@ -565,11 +865,11 @@ const FullPostView = ({ post, onBack }) => {
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-accent">•</span>
-                      Still coding. Still learning.
+                      Won wrestling gold.
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-accent">•</span>
-                      Check out LiftSense. It's dope.
+                      Still coding. Still wrestling.
                     </div>
                   </div>
                   
@@ -652,129 +952,6 @@ const FullPostView = ({ post, onBack }) => {
   );
 };
 
-// Section Card Component for detailed post view
-const SectionCard = ({ section, index }) => {
-  const IconComponent = section.icon;
-
-  return (
-    <motion.article
-      id={section.id}
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      className="group relative"
-    >
-      <div className="bg-gradient-to-br from-white/5 to-white/2 backdrop-blur-lg rounded-2xl border border-white/10 p-8 hover:border-accent/30 transition-all duration-500 overflow-hidden">
-        
-        {/* Timeline indicator */}
-        {section.timeline && (
-          <div className="absolute -left-4 top-8 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-primary font-bold text-sm">
-            {section.timeline.slice(-2)}
-          </div>
-        )}
-
-        {/* Header */}
-        <div className="flex items-start gap-4 mb-6">
-          <div className="p-3 bg-accent/10 rounded-xl border border-accent/20 group-hover:scale-110 transition-transform duration-300">
-            <IconComponent className="w-6 h-6 text-accent" />
-          </div>
-          <div className="flex-1">
-            <h2 className="text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300">
-              {section.title}
-            </h2>
-            {section.timeline && (
-              <span className="text-accent/70 text-sm font-medium">{section.timeline}</span>
-            )}
-          </div>
-        </div>
-
-        {/* Content */}
-        <div className="space-y-6">
-          <p className="text-white/80 text-lg leading-relaxed">
-            {section.content}
-          </p>
-
-          {/* Highlight box */}
-          {section.highlight && (
-            <div className="bg-accent/5 border-l-4 border-accent p-4 rounded-r-lg">
-              <p className="text-white/90 italic">{section.highlight}</p>
-            </div>
-          )}
-
-          {/* Code block */}
-          {section.codeBlock && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              className="bg-[#0d1117] rounded-lg border border-white/10 overflow-hidden"
-            >
-              <div className="flex items-center justify-between px-4 py-2 bg-white/5 border-b border-white/10">
-                <span className="text-white/60 text-sm">{section.codeBlock.language}</span>
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                </div>
-              </div>
-              <pre className="p-4 overflow-x-auto">
-                <code className="text-sm text-white/90 font-mono">
-                  {section.codeBlock.code}
-                </code>
-              </pre>
-            </motion.div>
-          )}
-
-          {/* Achievements list */}
-          {section.achievements && (
-            <div className="space-y-3">
-              <h4 className="text-white font-semibold mb-4">What's Next?</h4>
-              {section.achievements.map((achievement, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.1 }}
-                  className="flex items-start gap-3"
-                >
-                  <ChevronRight className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                  <span className="text-white/80">{achievement}</span>
-                </motion.div>
-              ))}
-            </div>
-          )}
-
-          {/* Project stats */}
-          {section.stats && (
-            <div className="grid grid-cols-3 gap-4 p-4 bg-white/5 rounded-lg">
-              {Object.entries(section.stats).map(([key, value]) => (
-                <div key={key} className="text-center">
-                  <div className="text-accent font-bold text-lg">{value}</div>
-                  <div className="text-white/60 text-sm capitalize">{key}</div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Project link */}
-          {section.projectLink && (
-            <Link href={section.projectLink}>
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center gap-2 bg-accent text-primary px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
-              >
-                Check out LiftSense
-                <ChevronRight className="w-4 h-4" />
-              </motion.button>
-            </Link>
-          )}
-        </div>
-      </div>
-    </motion.article>
-  );
-};
-
 // Main Blog Component
 const BlogClient = () => {
   const [view, setView] = useState("grid"); // "grid" or "post"
@@ -838,9 +1015,12 @@ const BlogClient = () => {
                 className="text-center"
               >
                 <div className="text-3xl font-bold text-accent">
-                  {blogPosts.reduce((sum, post) => sum + post.views, 0).toLocaleString()}
+                  {blogPosts.reduce((sum, post) => {
+                    const minutes = parseInt(post.readTime.split(' ')[0]);
+                    return sum + minutes;
+                  }, 0)}
                 </div>
-                <div className="text-white/60 text-sm">Total Views</div>  
+                <div className="text-white/60 text-sm">Minutes of Reading</div>  
               </motion.div>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
@@ -1095,15 +1275,15 @@ const BlogClient = () => {
 
                         {/* Footer */}
                         <div className="flex items-center justify-between border-t border-white/10 pt-4">
-                          <div className="flex items-center gap-4 text-white/60 text-sm">
-                            <div className="flex items-center gap-1">
-                              <ThumbsUp className="w-4 h-4" />
-                              <span>{post.likes}</span>
-                            </div>
-                            <div className="flex items-center gap-1">
-                              <MessageCircle className="w-4 h-4" />
-                              <span>{post.comments}</span>
-                            </div>
+                          <div className="flex flex-wrap gap-2">
+                            {post.tags.slice(0, 2).map((tag) => (
+                              <span 
+                                key={tag}
+                                className="px-2 py-1 bg-white/10 text-white/70 text-xs rounded-md"
+                              >
+                                #{tag.replace(' ', '')}
+                              </span>
+                            ))}
                           </div>
                           
                           <div className="flex items-center gap-1 text-accent text-sm font-medium">
